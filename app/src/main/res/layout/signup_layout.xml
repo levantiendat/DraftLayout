@@ -2,7 +2,7 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="40"
+    android:weightSum="30"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="wrap_content"
@@ -106,13 +106,13 @@
             android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"/>
-        <ImageButton
+        <ImageView
             android:layout_weight="1"
             android:background="@drawable/upload"
             android:layout_width="25dp"
             android:layout_height="35dp"/>
 
-        <ImageButton
+        <ImageView
             android:id="@+id/eye1"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
@@ -120,7 +120,37 @@
             android:layout_width="25dp"
             android:layout_height="35dp"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_height="35dp">
+        <TextView
+            android:textStyle="bold"
+            android:text="*  Back side:"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/upload"
+            android:layout_width="25dp"
+            android:layout_height="35dp"/>
 
+        <ImageView
+            android:id="@+id/eye2"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/eye"
+            android:layout_width="25dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
     <Button
         android:id="@+id/signin"
         android:layout_width="200dp"
