@@ -46,5 +46,13 @@
         android:text="Report"
         android:textSize="20dp"
         android:background="@drawable/khungvuong"/>
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="170dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button6"
+        android:text="Detail"
+        android:textSize="20dp"
+        android:background="@drawable/khungvuong"/>
 
 </LinearLayout>
