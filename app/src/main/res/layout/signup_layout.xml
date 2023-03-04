@@ -152,7 +152,7 @@
             android:layout_height="35dp"/>
     </LinearLayout>
     <Button
-        android:id="@+id/signin"
+        android:id="@+id/signin1"
         android:layout_width="200dp"
         android:layout_marginTop="20dp"
         android:layout_height="50dp"
