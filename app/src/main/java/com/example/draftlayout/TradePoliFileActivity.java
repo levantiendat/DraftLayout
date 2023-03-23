@@ -7,15 +7,16 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class AvailableClassActivity extends AppCompatActivity {
-    lopAdapter adapter;
+public class TradePoliFileActivity extends AppCompatActivity {
+
+    lop1adapter adapter;
     ListView listview1;
     ArrayList<Classname> arrayclass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.group_available_layout);
+        setContentView(R.layout.trade_polifile_layout);
         function();
         adddata();
         listview1.setAdapter(adapter);
@@ -23,7 +24,7 @@ public class AvailableClassActivity extends AppCompatActivity {
     private void function(){
         listview1=(ListView) findViewById(R.id.lwclass);
         arrayclass =new ArrayList<>();
-        adapter=new lopAdapter(this, R.layout.line_layout, arrayclass);
+        adapter=new lop1adapter(this, R.layout.line1_layout, arrayclass);
 
     }
     private void adddata(){

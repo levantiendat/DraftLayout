@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnsi,btnsu,btnpro,btnadpro,btnrp,btndetail;
+    Button btnsi,btnsu,btnpro,btnadpro,btnrp,btndetail,btntrade;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnadpro=(Button) findViewById(R.id.button4);
         btnrp=(Button) findViewById(R.id.button5);
         btndetail=(Button) findViewById(R.id.button6);
+        btntrade=(Button) findViewById(R.id.button7);
         btnsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,AvailableClassActivity.class);
+                startActivity(intent);
+            }
+        });
+        btntrade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,TradePoliFileActivity.class);
                 startActivity(intent);
             }
         });
