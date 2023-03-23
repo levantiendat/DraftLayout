@@ -10,15 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:weightSum="8"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+
+        android:layout_marginLeft="00dp"
+        android:layout_marginRight="00dp"
         android:layout_height="50dp">
         <ImageView
             android:layout_width="50dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:id="@+id/back"
-            android:layout_weight="1"
+
             android:background="@drawable/back"/>
         <TextView
             android:textColor="@color/black"
@@ -29,20 +29,20 @@
             android:text="GROUP AVAILABLE"
             android:layout_marginLeft="10dp"
 
-            android:layout_weight="5"
-            android:layout_width="match_parent"
+
+            android:layout_width="230dp"
             android:layout_height="50dp"/>
         <ImageView
             android:layout_width="50dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:id="@+id/set001"
-            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/setting"/>
         <ImageView
             android:layout_width="50dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:id="@+id/set002"
-            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/search"/>
     </LinearLayout>
     <ListView
